@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Park & Go — Smart Parking Infrastructure & Mobility Platform</title>
+  
+  <!-- SEO & Social Graph Meta Tags -->
+  <meta name="description" content="Park & Go transforms parking facilities into intelligent, high-yield digital mobility hubs. Real-time slot availability, guaranteed reservations, contactless QR entry, and enterprise analytics for venue owners.">
+  <meta name="keywords" content="smart parking system, real-time parking, parking reservation, parking management software, contactless parking, smart mobility, parking analytics">
+  <meta name="author" content="Park & Go">
+  
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Park & Go — Smart Parking Infrastructure & Mobility Platform">
+  <meta property="og:description" content="Turn empty spots into predictable revenue and eliminate driver congestion with real-time IoT spot tracking and contactless QR entry.">
+  <meta property="og:site_name" content="Park & Go">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Park & Go — Smart Parking Platform">
+  <meta name="twitter:description" content="Intelligent parking reservations, real-time slot telemetry, and turnkey analytics for parking operators.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       NAVIGATION BAR
+       =================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Park & Go Home">
+        <!-- Modern SVG Logo: P combined with Location Pin & Mobility Arrow -->
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#10B981" />
+            </linearGradient>
+          </defs>
+          <rect x="6" y="6" width="52" height="52" rx="14" fill="#0E1626" stroke="#2563EB" stroke-width="2"/>
+          <path d="M22 44V20H34C39.5228 20 44 24.4772 44 30C44 35.5228 39.5228 40 34 40H28V44H22Z" fill="url(#navLogoGrad)"/>
+          <circle cx="33" cy="30" r="4.5" fill="#0E1626"/>
+          <path d="M41 37L45 41L41 45" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Park &amp; Go</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">Product</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#simulator" class="nav-link">Interactive Demo</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#benefits" class="nav-link">For Owners</a></li>
+          <li><a href="#scalable" class="nav-link">Venues</a></li>
+          <li><a href="#about-us" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle, QR Modal Button, CTA) -->
+      <div class="nav-actions">
+        <!-- Presentation QR Trigger (Ideal for Pitch Meetings) -->
+        <button class="qr-modal-trigger" id="qrModalTrigger" title="Show Presentation QR Code for Mobile Scanning" aria-label="Open presentation QR code">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+          </svg>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle" id="themeToggleBtn" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <span id="themeToggleIcon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          </span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Partner With Us</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle mobile navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       1. HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-pulse"></span>
+          Enterprise Smart Mobility Platform
+        </div>
+        <h1 class="hero-title">
+          Smart Parking Infrastructure. <span class="gradient-text">Zero Congestion.</span> Maximum Revenue.
+        </h1>
+        <p class="hero-desc">
+          Park &amp; Go turns complex parking facilities into seamless digital spaces. Drivers find, reserve, and pay for spots in seconds — while venue owners gain complete real-time visibility, automated enforcement, and dynamic revenue growth.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary btn-lg">Schedule Location Pitch</a>
+          <a href="#simulator" class="btn btn-secondary btn-lg">
+            <span>Try Live Simulator</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+        
+        <!-- Live Proof Highlights -->
+        <div class="hero-stats-row">
+          <div class="stat-pill">
+            <span class="stat-pill-val">99.4%</span>
+            <span class="stat-pill-label">Check-in Accuracy</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-pill-val">-65%</span>
+            <span class="stat-pill-label">Search Time Waste</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-pill-val">+32%</span>
+            <span class="stat-pill-label">Facility Revenue Yield</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Interactive Phone Mockup -->
+      <div class="hero-visual">
+        <!-- Floating Accent Badges -->
+        <div class="hero-float-badge left">
+          <div class="float-icon green">⚡</div>
+          <div class="float-text">
+            <h4>Instant QR Entry</h4>
+            <p>0.8s Contactless Gate Pass</p>
+          </div>
+        </div>
+
+        <div class="hero-float-badge right">
+          <div class="float-icon blue">📊</div>
+          <div class="float-text">
+            <h4>Live Facility Telemetry</h4>
+            <p>18/18 Spots Monitored</p>
+          </div>
+        </div>
+
+        <!-- Phone Device Frame -->
+        <div class="phone-wrapper">
+          <div class="phone-screen">
+            <!-- Dynamic Notch -->
+            <div class="phone-notch">
+              <div class="notch-camera"></div>
+            </div>
+
+            <!-- App Header Inside Mockup -->
+            <div class="app-header">
+              <div class="app-brand">
+                <span class="app-brand-dot"></span>
+                <span>Park &amp; Go</span>
+              </div>
+              <div class="app-chip">Pilot Live</div>
+            </div>
+
+            <!-- App Body Inside Mockup -->
+            <div class="app-body">
+              <div class="app-status-card">
+                <div class="app-status-header">
+                  <span class="app-status-title">Zone A — Executive Deck</span>
+                  <span class="app-status-count">5 Available</span>
+                </div>
+                
+                <!-- Mockup Grid of Spots -->
+                <div class="mockup-grid">
+                  <div class="mockup-spot available">A-01</div>
+                  <div class="mockup-spot occupied">A-02</div>
+                  <div class="mockup-spot available">A-03 ♿</div>
+                  <div class="mockup-spot selected">A-04</div>
+                  <div class="mockup-spot reserved">A-05</div>
+                  <div class="mockup-spot occupied">A-06</div>
+                  <div class="mockup-spot available">A-07</div>
+                  <div class="mockup-spot available">A-08</div>
+                </div>
+              </div>
+
+              <!-- Active Booking Summary Card -->
+              <div class="mockup-booking-card">
+                <div class="booking-header">
+                  <span class="booking-spot-badge">Spot A-04 Reserved</span>
+                  <span class="booking-timer">Active • 1h 48m</span>
+                </div>
+
+                <div class="booking-qr-preview">
+                  <div class="mock-qr-icon">
+                    <svg viewBox="0 0 24 24" fill="#0F172A">
+                      <path d="M2 2h8v8H2zm2 2v4h4V4zm-2 12h8v8H2zm2 2v4h4v-4zm12-16h8v8h-8zm2 2v4h4V4zm-2 12h3v3h-3zm5 0h3v3h-3zm-5 5h3v3h-3zm5 0h3v3h-3zM11 6h2v2h-2zm0 6h2v2h-2zm-6 2h2v2H5zm12-3h2v2h-2zm-3 3h2v2h-2zm0 3h2v2h-2z"/>
+                    </svg>
+                  </div>
+                  <div class="booking-qr-text">
+                    <span>Contactless Gate Pass</span>
+                    <strong>PG-A04-PASS-ACTIVE</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Simulated App Button -->
+              <div class="mockup-cta-btn">
+                Tap for Turn-by-Turn Navigation &rarr;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       2. ABOUT THE PROJECT / PRODUCT: The Problem & The Solution
+       =================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">The Urban Challenge &amp; Solution</div>
+        <h2 class="section-title">Rethinking Parking from Frustration to Seamless Precision</h2>
+        <p class="section-subtitle">
+          Urban drivers spend an average of 14 minutes circling for parking, causing up to 30% of inner-city traffic. Meanwhile, venue owners suffer from untracked cash leakages, low turnover, and blind spots.
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- The Problem Card -->
+        <div class="comparison-card problem">
+          <div class="comparison-header">
+            <div class="comparison-icon">✕</div>
+            <h3 class="comparison-title">The Traditional Reality</h3>
+          </div>
+          <ul class="comparison-list">
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+              <span><strong>Circling &amp; Bottlenecks:</strong> Drivers block entrances while frantically searching for spots, degrading customer satisfaction.</span>
+            </li>
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+              <span><strong>Revenue Leakage &amp; Overstays:</strong> Paper tickets get lost, cash handling is unverified, and overtime vehicles stay unpenalized.</span>
+            </li>
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+              <span><strong>Zero Operational Data:</strong> Facility operators have no live count of actual occupancy, peak hours, or customer frequency.</span>
+            </li>
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+              <span><strong>Accessibility Friction:</strong> Designated disability bays are routinely abused without digital verification or enforcement.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The Solution Card -->
+        <div class="comparison-card solution">
+          <div class="comparison-header">
+            <div class="comparison-icon">✓</div>
+            <h3 class="comparison-title">The Park &amp; Go Standard</h3>
+          </div>
+          <ul class="comparison-list">
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span><strong>Guaranteed Advance Spot:</strong> Drivers book their exact spot and zone before arriving, driving straight to an illuminated slot.</span>
+            </li>
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span><strong>100% Cashless &amp; Contactless:</strong> Secure QR check-in/out, automated in-app digital wallet billing, and overstay calculation.</span>
+            </li>
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span><strong>Cloud Executive Telemetry:</strong> Facility managers monitor real-time occupancy heatmaps, peak times, and revenue in one dashboard.</span>
+            </li>
+            <li class="comparison-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span><strong>Automated Queue &amp; Appeals:</strong> Smart waiting lists auto-offer freshly vacated spots with a 5-minute reserved window.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. KEY FEATURES
+       =================================================================== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Architecture &amp; Capabilities</div>
+        <h2 class="section-title">Engineered with Precision for Modern Parking Operations</h2>
+        <p class="section-subtitle">
+          Built on a high-concurrency Node.js and MongoDB cloud backend with cross-platform mobile apps, every feature is tailored for operational speed, reliability, and security.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+          </div>
+          <h3 class="feature-title">Live Zone &amp; Slot Telemetry</h3>
+          <p class="feature-desc">
+            Visual coordinates for every bay across Zones A, B, and C with multi-floor support. Live state detection updates available, reserved, and occupied spots in real-time.
+          </p>
+          <span class="feature-tag">Real-Time Sync</span>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="feature-title">Advance Guaranteed Bookings</h3>
+          <p class="feature-desc">
+            Drivers choose exact duration hours with transparent pricing calculations. Spots are guaranteed, eliminating arrival uncertainty and entrance queues.
+          </p>
+          <span class="feature-tag">Zero Stress</span>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+          </div>
+          <h3 class="feature-title">Contactless QR Gate Validation</h3>
+          <p class="feature-desc">
+            Encrypted, single-use QR passes validate check-in and check-out at barriers. Compatible with mobile camera scanners or existing optical barrier readers.
+          </p>
+          <span class="feature-tag">Under 1 Sec Gate Pass</span>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          </div>
+          <h3 class="feature-title">Automated Smart Waiting Queue</h3>
+          <p class="feature-desc">
+            When all bays are full, incoming drivers join a digital queue. The algorithm automatically holds newly freed spots with a 5-minute acceptance window.
+          </p>
+          <span class="feature-tag">Fair Allocation</span>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="feature-title">Predictive Availability Heatmaps</h3>
+          <p class="feature-desc">
+            Historical occupancy charts show hourly availability probability per zone, helping drivers plan arrival times during peak commute hours.
+          </p>
+          <span class="feature-tag">Data Intelligence</span>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+          </div>
+          <h3 class="feature-title">In-App Wallet &amp; Vehicle Registry</h3>
+          <p class="feature-desc">
+            Frictionless cashless payment balance with instant top-ups, transaction receipts, and support for multi-car license plate registration under one account.
+          </p>
+          <span class="feature-tag">Cashless Mobility</span>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+          </div>
+          <h3 class="feature-title">Automated Overstay &amp; Disputes</h3>
+          <p class="feature-desc">
+            Configurable grace periods (e.g., 1st hour free) with transparent overstay fees. In-app appeal dispute portal enables quick customer service reviews.
+          </p>
+          <span class="feature-tag">Revenue Protection</span>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="feature-title">Facility Owner Operations Hub</h3>
+          <p class="feature-desc">
+            Live occupancy override controls, zone dynamic pricing, dedicated accessibility slot management, and exportable revenue audit reports.
+          </p>
+          <span class="feature-tag">Total Control</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. INTERACTIVE LIVE PARKING SIMULATOR
+       =================================================================== -->
+  <section class="section" id="simulator" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Live Demonstration</div>
+        <h2 class="section-title">Experience the Platform Live in Action</h2>
+        <p class="section-subtitle">
+          Test the parking logic right now. Switch between facility zones, click any spot to inspect its status, simulate a driver reservation, and generate a live contactless QR pass.
+        </p>
+      </div>
+
+      <div class="simulator-box">
+        <!-- Simulator Controls Header -->
+        <div class="sim-header">
+          <div class="sim-tabs">
+            <button class="sim-tab-btn active" data-zone="A">Zone A (Ground Floor)</button>
+            <button class="sim-tab-btn" data-zone="B">Zone B (Level 2 Covered)</button>
+            <button class="sim-tab-btn" data-zone="C">Zone C (Level 3 Deck)</button>
+          </div>
+
+          <div class="sim-legend">
+            <div class="legend-item"><span class="legend-dot avail"></span> Available</div>
+            <div class="legend-item"><span class="legend-dot res"></span> Reserved</div>
+            <div class="legend-item"><span class="legend-dot occ"></span> Occupied</div>
+            <div class="legend-item"><span class="legend-dot acc"></span> Accessible ♿</div>
+          </div>
+        </div>
+
+        <!-- Simulator Layout: Interactive Grid + Detail Inspector -->
+        <div class="sim-layout">
+          <div>
+            <div class="sim-grid-container">
+              <div class="sim-parking-grid" id="simGrid">
+                <!-- Dynamically populated by script.js -->
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 0.75rem; text-align: center;">
+              💡 <em>Click any parking bay to inspect live telemetry and simulate access states.</em>
+            </p>
+          </div>
+
+          <!-- Spot Detail & Actions Panel -->
+          <div class="sim-detail-panel">
+            <div class="sim-detail-title">
+              <span id="simSpotName">Spot A-01</span>
+              <span id="simSpotStatus" style="font-size: 0.85rem; font-family: var(--font-mono); font-weight: 800;">AVAILABLE</span>
+            </div>
+
+            <div class="sim-info-row">
+              <span>Location Zone:</span>
+              <strong id="simSpotZone">Zone A (Ground Level)</strong>
+            </div>
+            <div class="sim-info-row">
+              <span>Standard Tariff:</span>
+              <strong id="simSpotRate">1st Hr Free • 10 EGP/hr</strong>
+            </div>
+            <div class="sim-info-row">
+              <span>Bay Classification:</span>
+              <strong id="simSpotAcc">Standard Bay</strong>
+            </div>
+            <div class="sim-info-row">
+              <span>Sensor Status:</span>
+              <strong style="color: var(--color-accent-green);">IoT Online (Active)</strong>
+            </div>
+
+            <div class="sim-actions">
+              <button class="btn btn-primary" id="simBookBtn">Simulate Driver Reservation</button>
+              <button class="btn btn-secondary btn-sm" id="simReleaseBtn">Toggle Available State</button>
+            </div>
+
+            <!-- Dynamic QR Pass Result Box -->
+            <div class="sim-qr-box" id="simQrBox">
+              <svg id="simQrSvg" viewBox="0 0 100 100"></svg>
+              <div class="sim-qr-meta">
+                <span>Contactless Access Pass:</span>
+                <div id="simQrPassId" style="font-family: var(--font-mono); font-size: 0.9rem; margin-top: 0.2rem;">PG-A04-8921</div>
+              </div>
+              <span style="font-size: 0.7rem; color: #64748B; margin-top: 0.25rem;">Valid for Gate 1 &amp; Gate 2 Barriers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. HOW IT WORKS
+       =================================================================== -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Operational Flow</div>
+        <h2 class="section-title">Effortless for Drivers. Completely Automated for Owners.</h2>
+        <p class="section-subtitle">
+          From the moment a customer opens the app to their frictionless departure, Park &amp; Go eliminates manual queues and optimizes every minute of parking turnover.
+        </p>
+      </div>
+
+      <!-- 4-Step Driver Journey -->
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Discover &amp; Select</h3>
+          <p class="step-desc">
+            Driver checks live bay availability, filters for accessibility or preferred floors, and books their guaranteed spot before leaving home.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Arrive &amp; Scan QR</h3>
+          <p class="step-desc">
+            Driver approaches the entry barrier. The camera scans their unique in-app dynamic QR code, lifting the gate in under a second.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Seamless Parking</h3>
+          <p class="step-desc">
+            Turn-by-turn guidance leads the driver straight to their reserved bay. Live timers monitor duration and send friendly expiration reminders.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Automated Cashless Exit</h3>
+          <p class="step-desc">
+            At departure, the exit scanner validates the pass. The system computes exact duration, bills the in-app digital wallet, and releases the spot.
+          </p>
+        </div>
+      </div>
+
+      <!-- What the Facility Owner Gets Banner -->
+      <div class="owner-perk-banner">
+        <div class="owner-perk-content">
+          <h4>What the Location Owner Receives:</h4>
+          <p>
+            Zero manual ticket handling, automated tariff calculation (including grace periods and overstay penalties), comprehensive audit trails, and live multi-zone occupancy control.
+          </p>
+        </div>
+        <a href="#benefits" class="btn btn-primary">See Owner Benefits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. BENEFITS FOR PARKING OWNERS & OPERATORS
+       =================================================================== -->
+  <section class="section" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Business Value</div>
+        <h2 class="section-title">Maximizing Yield, Eliminating Operational Waste</h2>
+        <p class="section-subtitle">
+          Park &amp; Go doesn't just manage cars — it turns stagnant concrete spaces into high-efficiency, data-driven revenue generators.
+        </p>
+      </div>
+
+      <!-- Metric Highlights -->
+      <div class="benefits-grid">
+        <div class="benefit-metric-card">
+          <div class="metric-val">+32%</div>
+          <div class="metric-label">Revenue Optimization</div>
+          <p class="metric-desc">Captured through faster turnover, dynamic pricing tiers, and automated overstay recovery.</p>
+        </div>
+
+        <div class="benefit-metric-card">
+          <div class="metric-val">-65%</div>
+          <div class="metric-label">Facility Congestion</div>
+          <p class="metric-desc">Pre-assigned parking eliminates blind circulation and curbs entrance bottlenecks.</p>
+        </div>
+
+        <div class="benefit-metric-card">
+          <div class="metric-val">100%</div>
+          <div class="metric-label">Cashless Transparency</div>
+          <p class="metric-desc">Every transaction, ticket fee, and vehicle plate is timestamped with digital audit trails.</p>
+        </div>
+
+        <div class="benefit-metric-card">
+          <div class="metric-val">0</div>
+          <div class="metric-label">Hardware Overhead</div>
+          <p class="metric-desc">Software-first platform compatible with standard optical scanners, tablets, or barrier APIs.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Facility ROI Calculator -->
+      <div class="roi-calculator-box">
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">
+              Calculate Your Facility's Projected Annual Upside
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Adjust the sliders below to match your parking capacity and tariff structure:
+            </p>
+
+            <!-- Slider 1: Total Bays -->
+            <div class="range-group">
+              <div class="range-header">
+                <span class="range-label">Total Parking Bays</span>
+                <span class="range-value" id="calcSpacesVal">350 bays</span>
+              </div>
+              <input type="range" id="calcSpaces" min="50" max="1500" step="25" value="350">
+            </div>
+
+            <!-- Slider 2: Average Hourly Tariff -->
+            <div class="range-group">
+              <div class="range-header">
+                <span class="range-label">Average Hourly Rate</span>
+                <span class="range-value" id="calcFeeVal">15 EGP / hr</span>
+              </div>
+              <input type="range" id="calcFee" min="5" max="50" step="5" value="15">
+            </div>
+
+            <!-- Slider 3: Daily Turnover -->
+            <div class="range-group">
+              <div class="range-header">
+                <span class="range-label">Daily Turnover per Bay</span>
+                <span class="range-value" id="calcTurnoverVal">3.2x / day</span>
+              </div>
+              <input type="range" id="calcTurnover" min="1.0" max="6.0" step="0.2" value="3.2">
+            </div>
+          </div>
+
+          <!-- Results Card -->
+          <div class="calc-results-card">
+            <div class="calc-res-item">
+              <span class="calc-res-label">Estimated Annual Revenue Uplift</span>
+              <div class="calc-res-number" id="resRevenue">+1,962,240 EGP</div>
+            </div>
+
+            <div class="calc-res-item">
+              <span class="calc-res-label">Customer Search Time Eliminated</span>
+              <div class="calc-res-number blue" id="resHours">89,936 hrs</div>
+            </div>
+
+            <div class="calc-res-item">
+              <span class="calc-res-label">CO2 Vehicle Emissions Avoided</span>
+              <div class="calc-res-number blue" id="resCo2">21 tons</div>
+            </div>
+
+            <p class="calc-disclaimer">
+              *Projections based on real pilot utilization metrics: ~28% improved spot rotation and ~12% recovery of untracked overtime vehicles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7. SCALABLE FOR ANY LOCATION & SECTOR
+       =================================================================== -->
+  <section class="section" id="scalable">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Multi-Venue Architecture</div>
+        <h2 class="section-title">Engineered to Scale Across Every Urban Space</h2>
+        <p class="section-subtitle">
+          From multi-level mall garages to sprawling campus lots and 24/7 medical facilities, Park &amp; Go adapts to unique operational guidelines and pricing models.
+        </p>
+      </div>
+
+      <div class="venues-grid">
+        <!-- Venue 1: Malls -->
+        <div class="venue-card">
+          <div class="venue-icon">🛍️</div>
+          <div class="venue-details">
+            <h4>Shopping Malls &amp; Retail Complexes</h4>
+            <p>Convert congested weekend bottlenecks into seamless entrances. Shoppers pre-book spaces close to their favorite department stores or cinema gates.</p>
+            <div class="venue-tag-list">
+              <span>Peak-Surge Smoothing</span>
+              <span>Retail Loyalty Ties</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 2: Universities -->
+        <div class="venue-card">
+          <div class="venue-icon">🎓</div>
+          <div class="venue-details">
+            <h4>Universities &amp; Campus Estates</h4>
+            <p>Proven in high-density campus environments. Zone separation for faculty, staff, and students with student ID or plate recognition.</p>
+            <div class="venue-tag-list">
+              <span>Semester Quotas</span>
+              <span>Morning Peak Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 3: Hospitals -->
+        <div class="venue-card">
+          <div class="venue-icon">🏥</div>
+          <div class="venue-details">
+            <h4>Hospitals &amp; Healthcare Facilities</h4>
+            <p>Stress-free reserved bays for patients and visitors, plus guaranteed priority emergency lanes and dedicated disability allocation.</p>
+            <div class="venue-tag-list">
+              <span>Disability Priority</span>
+              <span>24/7 Dynamic Shift Access</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 4: Airports -->
+        <div class="venue-card">
+          <div class="venue-icon">✈️</div>
+          <div class="venue-details">
+            <h4>Airports &amp; Transit Terminals</h4>
+            <p>Short-term drop-off zones and multi-day long-term parking reservations coordinated with flight schedules and digital boarding passes.</p>
+            <div class="venue-tag-list">
+              <span>Long-Term Stays</span>
+              <span>Terminal Zone Guidance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 5: Business Towers -->
+        <div class="venue-card">
+          <div class="venue-icon">🏢</div>
+          <div class="venue-details">
+            <h4>Corporate Towers &amp; Business Districts</h4>
+            <p>Allocate dedicated tenant spots, manage visitor guest passes seamlessly via WhatsApp or email, and monitor corporate fleet allocations.</p>
+            <div class="venue-tag-list">
+              <span>Tenant Quotas</span>
+              <span>VIP Guest Passes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 6: Municipal & Private Garages -->
+        <div class="venue-card">
+          <div class="venue-icon">🅿️</div>
+          <div class="venue-details">
+            <h4>Urban Garages &amp; Municipal Lots</h4>
+            <p>Transform older city garages into high-tech, automated facilities with zero infrastructure overhaul and full tax-compliant audit trails.</p>
+            <div class="venue-tag-list">
+              <span>Plug-and-Play Gates</span>
+              <span>Central City Heatmap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       8. ABOUT US & COMPANY STORY
+       =================================================================== -->
+  <section class="section" id="about-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Our Journey</div>
+        <h2 class="section-title">Born from Academic Rigor, Scaled for Enterprise Mobility</h2>
+        <p class="section-subtitle">
+          We founded Park &amp; Go to solve real-world parking chaos with elegant technology and reliable engineering.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-story">
+          <p>
+            Park &amp; Go originated as an intensive engineering pilot at a premier university campus. Faced with severe morning gridlocks, hundreds of student vehicles searching for parking simultaneously, and inefficient manual ticketing, our team engineered an end-to-end IoT and cloud solution.
+          </p>
+          <p>
+            The pilot proved that with <strong>real-time zone telemetry, guaranteed slot bookings, and instant QR entry</strong>, parking transit time plummeted by over 65%, while spot utilization reached peak efficiency.
+          </p>
+          <p>
+            Today, that proven architecture has been scaled into <strong>Park &amp; Go</strong> — a multi-facility enterprise platform ready to power shopping malls, commercial business districts, universities, airports, and private garage operators across the region.
+          </p>
+        </div>
+
+        <div class="about-mission-box">
+          <div class="mission-item">
+            <h4>🎯 Our Mission</h4>
+            <p>
+              To eliminate parking friction and vehicle idling by turning every physical parking bay into an intelligent, connected digital asset.
+            </p>
+          </div>
+          <div class="mission-item">
+            <h4>🚀 Our Vision</h4>
+            <p>
+              To become the region’s premier urban mobility network, enabling drivers to reach any destination with guaranteed access and zero wasted minutes.
+            </p>
+          </div>
+          <div class="mission-item">
+            <h4>🛡️ Our Core Values</h4>
+            <p>
+              Speed, operational transparency, rock-solid uptime, and genuine partner revenue growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pilot Proof of Concept Highlight Banner -->
+      <div class="pilot-highlight-card">
+        <div>
+          <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem;">
+            Validated Across 1,000+ Simulated &amp; Real Pilot Cycles
+          </h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 600px;">
+            Our initial university campus deployment stress-tested simultaneous arrival surges, queue offer timeouts, and multi-zone telemetry under real operational conditions.
+          </p>
+        </div>
+        <div class="pilot-meta">
+          <div class="pilot-meta-item">
+            <span>Pilot Scope</span>
+            <strong>3 Multi-Level Zones</strong>
+          </div>
+          <div class="pilot-meta-item">
+            <span>QR Latency</span>
+            <strong>&lt; 800ms</strong>
+          </div>
+          <div class="pilot-meta-item">
+            <span>Uptime Track</span>
+            <strong>99.9%</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership / Team Section (Easily Editable) -->
+      <div class="team-section">
+        <h3 class="team-section-title">Leadership &amp; Engineering Team</h3>
+        <div class="team-grid">
+          <!-- Team Member 1 -->
+          <div class="team-card">
+            <div class="team-avatar">LK</div>
+            <h4 class="team-name">Loay Khaled</h4>
+            <div class="team-role">Founder &amp; Chief Executive Officer</div>
+            <p class="team-bio">
+              Product architect driving the Park &amp; Go vision from initial campus prototype to commercial scale. Leading partnerships with facility owners.
+            </p>
+            <div class="team-social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="mailto:partners@parkandgo.io" aria-label="Email">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="team-card">
+            <div class="team-avatar">MS</div>
+            <h4 class="team-name">Systems Engineering Lead</h4>
+            <div class="team-role">Head of Infrastructure &amp; Backend</div>
+            <p class="team-bio">
+              Specialist in high-concurrency Node.js, distributed database replication, and real-time WebSocket telemetry for parking gate controllers.
+            </p>
+            <div class="team-social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="team-card">
+            <div class="team-avatar">FA</div>
+            <h4 class="team-name">Mobile Experience Lead</h4>
+            <div class="team-role">Head of Flutter &amp; Mobile UI/UX</div>
+            <p class="team-bio">
+              Crafting native 60fps Flutter experiences, accessible dark/light themes, and fast QR code rendering for drivers on iOS and Android.
+            </p>
+            <div class="team-social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="team-card">
+            <div class="team-avatar">AM</div>
+            <h4 class="team-name">Operations &amp; Rollout Lead</h4>
+            <div class="team-role">Head of Facility Integrations</div>
+            <p class="team-bio">
+              Directing on-site deployments, sensor calibrations, staff training, and 24/7 service-level agreements for commercial parking garages.
+            </p>
+            <div class="team-social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       9. CONTACT US / PARTNERSHIP INQUIRIES
+       =================================================================== -->
+  <section class="section" id="contact" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Deploy in Your Location</div>
+        <h2 class="section-title">Ready to Modernize Your Parking Operations?</h2>
+        <p class="section-subtitle">
+          Whether you manage a private garage, commercial mall, hospital, or corporate complex, let's discuss how Park &amp; Go can increase revenue and simplify entry.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Meta & Direct Channels (Easily Editable via script.js CONFIG) -->
+        <div class="contact-info-panel">
+          <div class="contact-meta-card">
+            <div class="contact-icon-wrapper">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <div class="contact-meta-content">
+              <h4>Direct Email</h4>
+              <p><a href="mailto:partners@parkandgo.io" data-config="contact.email">partners@parkandgo.io</a></p>
+            </div>
+          </div>
+
+          <div class="contact-meta-card">
+            <div class="contact-icon-wrapper">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            </div>
+            <div class="contact-meta-content">
+              <h4>Phone &amp; WhatsApp</h4>
+              <p><a href="tel:+201002345678" data-config="contact.phone">+20 100 234 5678</a></p>
+            </div>
+          </div>
+
+          <div class="contact-meta-card">
+            <div class="contact-icon-wrapper">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <div class="contact-meta-content">
+              <h4>Headquarters</h4>
+              <p data-config="contact.address">Alexandria &amp; Cairo, Egypt • Regional Operations</p>
+            </div>
+          </div>
+
+          <div class="contact-meta-card">
+            <div class="contact-icon-wrapper">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div class="contact-meta-content">
+              <h4>Consultation Hours</h4>
+              <p data-config="contact.hours">Sun – Thu: 9:00 AM – 6:00 PM (EET)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-box">
+          <form id="partnershipForm" novalidate>
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Full Name *</label>
+                <input class="form-input" type="text" id="contactName" placeholder="e.g. Eng. Loay Khaled" required>
+                <span class="form-feedback">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Business Email *</label>
+                <input class="form-input" type="email" id="contactEmail" placeholder="you@company.com" required>
+                <span class="form-feedback">Please enter a valid work email</span>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number *</label>
+                <input class="form-input" type="tel" id="contactPhone" placeholder="+20 100 000 0000" required>
+                <span class="form-feedback">Please enter your contact number</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactVenueType">Facility / Venue Type</label>
+                <select class="form-select" id="contactVenueType">
+                  <option value="mall">Shopping Mall &amp; Retail Complex</option>
+                  <option value="university">University / Educational Campus</option>
+                  <option value="hospital">Hospital / Medical Center</option>
+                  <option value="corporate">Corporate Business Tower</option>
+                  <option value="airport">Airport / Transit Terminal</option>
+                  <option value="garage">Commercial Parking Garage</option>
+                  <option value="other">Other Development</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactCapacity">Estimated Parking Capacity (Bays)</label>
+              <input class="form-input" type="text" id="contactCapacity" placeholder="e.g. 250 spots across 3 levels">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Project Details &amp; Objectives *</label>
+              <textarea class="form-textarea" id="contactMessage" placeholder="Tell us about your current parking setup, gate barriers, pain points, or timeline..." required></textarea>
+              <span class="form-feedback">Please provide brief details about your inquiry</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" id="formSubmitBtn" style="width: 100%;">
+              <span>Submit Partnership Request</span>
+            </button>
+          </form>
+
+          <!-- Success Confirmation Banner -->
+          <div class="form-success-banner" id="formSuccessBanner">
+            <div style="font-size: 2.5rem;">🎉</div>
+            <h4>Partnership Request Received!</h4>
+            <p>
+              Thank you for reaching out. A Park &amp; Go mobility specialist will review your facility specifications and contact you within 24 hours to schedule a live system walkthrough.
+            </p>
+            <button class="btn btn-secondary btn-sm" id="formResetBtn" style="align-self: center; margin-top: 0.5rem;">
+              Send Another Inquiry
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       10. FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Park & Go">
+            <svg viewBox="0 0 64 64" fill="none" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="52" height="52" rx="14" fill="#0E1626" stroke="#2563EB" stroke-width="2"/>
+              <path d="M22 44V20H34C39.5228 20 44 24.4772 44 30C44 35.5228 39.5228 40 34 40H28V44H22Z" fill="url(#navLogoGrad)"/>
+              <circle cx="33" cy="30" r="4.5" fill="#0E1626"/>
+              <path d="M41 37L45 41L41 45" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Park &amp; Go</span>
+          </a>
+          <p>
+            The next-generation smart parking management network. Turning static bays into high-yield, connected mobility infrastructure.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--text-faint);">
+            Pilot Validated • Multi-Tenant Enterprise Ready
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Overview</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#simulator">Live Simulator</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">For Venues</h4>
+          <ul class="footer-links">
+            <li><a href="#benefits">Owner ROI &amp; Revenue</a></li>
+            <li><a href="#scalable">Commercial Malls</a></li>
+            <li><a href="#scalable">University Campuses</a></li>
+            <li><a href="#scalable">Hospitals &amp; Airports</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about-us">Our Story &amp; Pilot</a></li>
+            <li><a href="#about-us">Leadership Team</a></li>
+            <li><a href="#contact">Contact &amp; Support</a></li>
+            <li><a href="#" id="footerQrLink">Presentation QR</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Park &amp; Go. All rights reserved. Built for modern urban mobility.
+        </div>
+        <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <span>Back to Top</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       11. PRESENTATION QR CODE MODAL
+       (Instant scan for clients & facility owners in meetings)
+       =================================================================== -->
+  <div class="modal-backdrop" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="qrModalClose" aria-label="Close QR Modal">&times;</button>
+      <h3 id="modalTitle" style="font-size: 1.35rem; font-weight: 800; color: var(--text-main);">
+        Scan to Open Park &amp; Go
+      </h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">
+        Presenting to clients? Scan with any smartphone camera to view the live mobile experience.
+      </p>
+
+      <div class="modal-qr-container" id="modalQrCode">
+        <!-- Dynamically rendered QR code -->
+      </div>
+
+      <div class="modal-url-display" id="qrModalUrl">
+        https://park-and-go.vercel.app
+      </div>
+
+      <button class="btn btn-secondary btn-sm" id="copyUrlBtn" style="width: 100%;">
+        Copy Website Link
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+  <script>
+    // Wire up footer QR link to open modal
+    document.getElementById('footerQrLink').addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('qrModalTrigger').click();
+    });
+  </script>
+</body>
+</html>
