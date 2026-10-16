@@ -432,7 +432,8 @@ function initQrModal() {
 
   if (!modal) return;
 
-  const currentUrl = window.location.href.split('#')[0];
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:';
+  const currentUrl = isLocal ? 'https://parkandgo-woad.vercel.app/' : window.location.href.split('#')[0];
   if (urlDisplay) urlDisplay.textContent = currentUrl;
 
   // Generate dynamic QR Code for the link
