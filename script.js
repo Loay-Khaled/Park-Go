@@ -365,12 +365,15 @@ function initRoiCalculator() {
 
 /**
  * Contact & Demo Inquiry Form Handler
+ * Sends real email to Loay_khaled6@yahoo.com (CC: mmoamenn33@gmail.com) via FormSubmit
+ * and generates pre-filled WhatsApp link
  */
 function initContactForm() {
   const form = document.getElementById('partnershipForm');
   const successBanner = document.getElementById('formSuccessBanner');
   const resetBtn = document.getElementById('formResetBtn');
   const submitBtn = document.getElementById('formSubmitBtn');
+  const waBtn = document.getElementById('formWhatsAppBtn');
 
   if (!form) return;
 
@@ -394,19 +397,66 @@ function initContactForm() {
 
     if (!isValid) return;
 
+    const name = document.getElementById('contactName')?.value.trim() || 'Prospective Client';
+    const email = document.getElementById('contactEmail')?.value.trim() || '';
+    const phone = document.getElementById('contactPhone')?.value.trim() || '';
+    const venueType = document.getElementById('contactVenueType')?.value || 'Not specified';
+    const capacity = document.getElementById('contactCapacity')?.value.trim() || 'Not specified';
+    const message = document.getElementById('contactMessage')?.value.trim() || '';
+
+    // Prepare WhatsApp Link for the Success Screen
+    const waText = encodeURIComponent(
+      `*New Park & Go Partnership Inquiry*\n\n` +
+      `👤 *Name:* ${name}\n` +
+      `📧 *Email:* ${email}\n` +
+      `📱 *Phone:* ${phone}\n` +
+      `🏢 *Facility Type:* ${venueType}\n` +
+      `🅿️ *Capacity:* ${capacity}\n` +
+      `💬 *Details:* ${message}`
+    );
+    const waUrl = `https://wa.me/201151507298?text=${waText}`;
+    if (waBtn) waBtn.href = waUrl;
+
     if (submitBtn) {
       submitBtn.disabled = true;
       submitBtn.innerHTML = `<span>Transmitting Inquiry...</span>`;
     }
 
-    setTimeout(() => {
+    // Live Email Transmission via FormSubmit AJAX (Zero backend setup required)
+    fetch("https://formsubmit.co/ajax/Loay_khaled6@yahoo.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        "Full Name": name,
+        "Email Address": email,
+        "Phone / WhatsApp": phone,
+        "Facility Venue Type": venueType,
+        "Estimated Parking Capacity": capacity,
+        "Project Inquiry Message": message,
+        "_subject": `🚗 New Park & Go Partnership Request from ${name}`,
+        "_cc": "mmoamenn33@gmail.com",
+        "_template": "table"
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
       form.style.display = 'none';
       if (successBanner) successBanner.classList.add('active');
+    })
+    .catch(error => {
+      // Even if offline/blocked by ad-blocker, transition to success and give WhatsApp option
+      form.style.display = 'none';
+      if (successBanner) successBanner.classList.add('active');
+    })
+    .finally(() => {
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `<span>Submit Partnership Request</span>`;
       }
-    }, 800);
+    });
   });
 
   if (resetBtn) {
