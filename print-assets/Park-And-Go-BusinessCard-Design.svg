@@ -74,14 +74,14 @@
         <g transform="translate(0, 0)">
           <circle cx="12" cy="10" r="12" fill="#1E293B"/>
           <text x="12" y="14" font-size="11" text-anchor="middle" fill="#10B981">📱</text>
-          <text x="34" y="14" class="font-mono" font-size="13" fill="#E2E8F0">+20 100 234 5678</text>
+          <text x="34" y="14" class="font-mono" font-size="13" fill="#E2E8F0">+20 115 150 7298 / +20 155 405 6525</text>
         </g>
 
         <!-- Email -->
         <g transform="translate(0, 36)">
           <circle cx="12" cy="10" r="12" fill="#1E293B"/>
           <text x="12" y="14" font-size="11" text-anchor="middle" fill="#3B82F6">✉️</text>
-          <text x="34" y="14" class="font-body" font-size="13" fill="#E2E8F0">partners@parkandgo.io</text>
+          <text x="34" y="14" class="font-body" font-size="12" fill="#E2E8F0">Loay_khaled6@yahoo.com</text>
         </g>
 
         <!-- Live Website URL -->
@@ -95,7 +95,7 @@
         <g transform="translate(0, 108)">
           <circle cx="12" cy="10" r="12" fill="#1E293B"/>
           <text x="12" y="14" font-size="11" text-anchor="middle" fill="#F59E0B">📍</text>
-          <text x="34" y="14" class="font-body" font-size="12" fill="#94A3B8">Alexandria &amp; Cairo, Egypt</text>
+          <text x="34" y="14" class="font-body" font-size="12" fill="#94A3B8">Cairo, Egypt</text>
         </g>
       </g>
     </g>

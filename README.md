@@ -142,12 +142,12 @@ const CONFIG = {
   tagline: "Smart Parking Infrastructure. Zero Congestion. Maximum Revenue.",
   
   contact: {
-    email: "partners@parkandgo.io",      // Update your email here
-    salesEmail: "sales@parkandgo.io",
-    phone: "+20 100 234 5678",           // Update your phone here
-    whatsapp: "+20 100 234 5678",
-    address: "Alexandria & Cairo, Egypt • Regional Operations",
-    hours: "Sun – Thu: 9:00 AM – 6:00 PM (EET)"
+    email: "Loay_khaled6@yahoo.com",
+    emailSecondary: "mmoamenn33@gmail.com",
+    phone: "+201151507298",
+    phoneSecondary: "+201554056525",
+    whatsapp: "+201151507298",
+    address: "Cairo, Egypt"
   },
 
   social: {

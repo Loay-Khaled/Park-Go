@@ -15,12 +15,12 @@ const CONFIG = {
   
   // Contact Information (Easily editable for meetings & pitches)
   contact: {
-    email: "partners@parkandgo.io",
-    salesEmail: "sales@parkandgo.io",
-    phone: "+20 100 234 5678",
-    whatsapp: "+20 100 234 5678",
-    address: "Alexandria & Cairo, Egypt • Regional Operations",
-    hours: "Sun – Thu: 9:00 AM – 6:00 PM (EET)"
+    email: "Loay_khaled6@yahoo.com",
+    emailSecondary: "mmoamenn33@gmail.com",
+    phone: "+201151507298",
+    phoneSecondary: "+201554056525",
+    whatsapp: "+201151507298",
+    address: "Cairo, Egypt"
   },
 
   // Social Links
