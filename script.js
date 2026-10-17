@@ -444,10 +444,24 @@ function initContactForm() {
     .then(response => response.json())
     .then(data => {
       form.style.display = 'none';
+      const successTitle = successBanner?.querySelector('h4');
+      const successDesc = document.getElementById('formSuccessDesc');
+
+      if (data && (data.success === 'false' || data.success === false) && data.message && data.message.includes('Activation')) {
+        if (successTitle) successTitle.textContent = 'Activation Email Sent! 📩';
+        if (successDesc) {
+          successDesc.innerHTML = 'FormSubmit has sent a 1-time confirmation link to <strong>Loay_khaled6@yahoo.com</strong>.<br><br>👉 <strong>Please check your Spam / Junk folder</strong> and click <em>"Activate Form"</em>. Once clicked, this and all future inquiries will land straight into your inbox!';
+        }
+      } else {
+        if (successTitle) successTitle.textContent = 'Partnership Request Sent! 🎉';
+        if (successDesc) {
+          successDesc.innerHTML = 'Thank you for reaching out. Your request has been transmitted directly to our team inbox. We will review your facility specifications and contact you shortly.';
+        }
+      }
+
       if (successBanner) successBanner.classList.add('active');
     })
     .catch(error => {
-      // Even if offline/blocked by ad-blocker, transition to success and give WhatsApp option
       form.style.display = 'none';
       if (successBanner) successBanner.classList.add('active');
     })
